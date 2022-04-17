@@ -7,7 +7,7 @@ import datetime as dt
 from twelvedata import TDClient
 from opensea import OpenseaAPI
 from opensea import utils
-
+from MCForecastTools import MCSimulation
 
 
 #All Functions
@@ -26,7 +26,7 @@ def create_ts(user_inputc, td):
             exchange = "Binance",
             interval = '1day',
             outputsize=5000,
-            start_date = '2020-01-15',
+            start_date = '2017-12-31',
             end_date = '2022-03-31',
             timezone="America/New_York",
             )
@@ -65,7 +65,7 @@ btc = td.time_series(
         exchange = "Binance",
         interval = '1day',
         outputsize=5000,
-        start_date = '2020-01-01',
+        start_date = '2017-12-31',
         end_date = '2022-03-31',
         timezone="America/New_York",
         )
@@ -78,7 +78,7 @@ eth = td.time_series(
         exchange = "Binance",
         interval = '1day',
         outputsize=5000,
-        start_date = '2020-01-01',
+        start_date = '2017-12-31',
         end_date = '2022-03-31',
         timezone="America/New_York",
         )
@@ -91,7 +91,7 @@ xrp = td.time_series(
         exchange = "Binance",
         interval = '1day',
         outputsize=5000,
-        start_date = '2020-01-01',
+        start_date = '2017-12-31',
         end_date = '2022-03-31',
         timezone="America/New_York",
         )
@@ -104,7 +104,7 @@ bnb = td.time_series(
         exchange = "Binance",
         interval = '1day',
         outputsize=5000,
-        start_date = '2020-01-01',
+        start_date = '2017-12-31',
         end_date = '2022-03-31',
         timezone="America/New_York",
         )
@@ -117,7 +117,7 @@ sol = td.time_series(
         exchange = "Binance",
         interval = '1day',
         outputsize=5000,
-        start_date = '2020-01-01',
+        start_date = '2017-12-31',
         end_date = '2022-03-31',
         timezone="America/New_York",
         )
@@ -130,7 +130,7 @@ ada = td.time_series(
         exchange = "Binance",
         interval = '1day',
         outputsize=5000,
-        start_date = '2020-01-01',
+        start_date = '2017-12-31',
         end_date = '2022-03-31',
         timezone="America/New_York",
         )
@@ -143,7 +143,7 @@ luna = td.time_series(
         exchange = "Binance",
         interval = '1day',
         outputsize=5000,
-        start_date = '2020-01-01',
+        start_date = '2017-12-31',
         end_date = '2022-03-31',
         timezone="America/New_York",
         )

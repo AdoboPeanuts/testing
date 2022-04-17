@@ -2,11 +2,13 @@
 import numpy as np
 import pandas as pd
 import os
+import streamlit as st
 import datetime as dt
 import pytz
 from twelvedata import TDClient
 from opensea import OpenseaAPI
 from opensea import utils
+import CustomModule as cm
 
 class MCSimulation:
     """
@@ -38,7 +40,7 @@ class MCSimulation:
         Parameters
         ----------
         portfolio_data: pandas.DataFrame
-            DataFrame containing cryptocurrency price information from OpenSea API
+            DataFrame containing cryptocurrency price information from twelvedata TDClient
         weights: list(float)
             A list fractions representing percentage of total investment per cryptocurrency. DEFAULT: Equal distribution
         num_simulation: int
