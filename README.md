@@ -66,11 +66,11 @@ Creating the side bar to filter asset categories for "NFT" and "Cryptocurrencies
 Creating the header as "Cryto API Tracker"
 
 #### # Opensea API Key
-To pull NFT statistics from OpenSea as stated in the custom module.
+The Opensea API key is to pull NFT statistics from OpenSea as stated in the custom module.
 
 opensea_api = OpenseaAPI(apikey="7913a9c0377249d2998900d7ce6d38b3")
 
 #### # Twelve Data API Key
-To allow us access to cyrptocurrency data frames from Twelve Data as stated in the custom module.
+The Twelve Data API key is to allow us access to cyrptocurrency data frames from Twelve Data as stated in the custom module.
 
 td = TDClient(apikey="d1d0c43b0fb445518d1435c2b90c9cdc")
