@@ -16,11 +16,11 @@ Project_1_Final.py
 
 ### Custom Module - Importing API from Twelve Data to enable us to build the crypto dataframes and importing APIs from Opensea to allow us collect NFT data for this project.
 
-#### # Opensea API Key - setting 
-opensea_api = OpenseaAPI(apikey="7913a9c0377249d2998900d7ce6d38b3")
+     # Opensea API Key - setting 
+       opensea_api = OpenseaAPI(apikey="7913a9c0377249d2998900d7ce6d38b3")
 
-#### # Twelve Data API Key
-td = TDClient(apikey="d1d0c43b0fb445518d1435c2b90c9cdc") 
+     # Twelve Data API Key
+     td = TDClient(apikey="d1d0c43b0fb445518d1435c2b90c9cdc") 
 
 #### # Cryptocurrency DF Function
 Creating the cyptocurrency dataframe functions using the following parameters; time series, symbol, exchange, interval, outputsize, start date, end date and timezone.
@@ -36,41 +36,49 @@ Setting up the cryptocurrency library for the sample seven cryptocurrencies sele
 
 BTC , ETH , XRP , BNB , SOL , ADA , LUNA 
 
-### Setting up the user interface for the project output on Streamlit. The codes are contained in the file titled Project_1_Final.py
+### Setting up the project user interface on Streamlit. The codes are contained in the file titled Project_1_Final.py
 
 * Importing relevant libraries and dependencies (CustomModule and MCForecastTools).
 
-  import pandas as pd
-
-  import os
-
-  import streamlit as st
-
-  import numpy as np
-
-  import datetime as dt
-
-  from twelvedata import TDClient
-
-  from opensea import OpenseaAPI
-
-  from opensea import utils
-
-  import CustomModule as cm
-
-  from MCForecastTools import MCSimulation
-
+        import pandas as pd
+        import os
+        import streamlit as st
+        import numpy as np
+        import datetime as dt
+        from twelvedata import TDClient
+        from opensea import OpenseaAPI
+        from opensea import utils
+        import CustomModule as cm
+        from MCForecastTools import MCSimulation
 #### # Streamlit UI
-Creating the side bar to filter asset categories for "NFT" and "Cryptocurrencies" to give users a drop down to select either "NFT" and "Cryptocurrencies"
+Creating the side bar as asset categories for "NFT" and "Cryptocurrencies" to give users a drop down to select either "NFT" and "Cryptocurrencies"
 
 Creating the header as "Cryto API Tracker"
 
 #### # Opensea API Key
-The Opensea API key is to pull NFT statistics from OpenSea as stated in the custom module.
+We are importing the Opensea API key is to pull NFT statistics from OpenSea as stated in the custom module.
 
-opensea_api = OpenseaAPI(apikey="7913a9c0377249d2998900d7ce6d38b3")
-
+        opensea_api = OpenseaAPI(apikey="7913a9c0377249d2998900d7ce6d38b3")
+        
 #### # Twelve Data API Key
-The Twelve Data API key is to allow us access to cyrptocurrency data frames from Twelve Data as stated in the custom module.
+We are importing the Twelve Data API key is to allow us access to cyrptocurrency data frames from Twelve Data as stated in the custom module.
 
-td = TDClient(apikey="d1d0c43b0fb445518d1435c2b90c9cdc")
+        td = TDClient(apikey="d1d0c43b0fb445518d1435c2b90c9cdc")
+        
+#### # NFT Assets
+Setting up filters for NFT Assets to show a dialogue box for users to either select to view the "statistics" or choose to "compare".
+
+#### # Main NFT Code
+Using the IF function to set up filters and subheaders for the NFT assets. 
+If a user selects NFT, this project would present 2 options to either choose to view the "statistics" of the NFT or to "compare" with anther NFT.
+
+#### #User input Code
+If the user chooses any of the 2 filters (statistics,compare), the subheader would pop up    requesting for the NFT "Collection Contract Address". This unique contract adress will pull up the contract data for the NFT as per below contract parameters.
+
+#### # Check for user input
+The length of the Collection Contract Address must be greater than 1 to be identified as valid.
+
+#### # Contract Data
+Setting up below Opensea API contract parameters 
+
+    contract_data , description , date_of_creation , discord , website , name , telegram , twitter ,       instagram , address 
