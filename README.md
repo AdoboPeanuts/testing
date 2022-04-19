@@ -61,7 +61,7 @@ BTC , ETH , XRP , BNB , SOL , ADA , LUNA
   from MCForecastTools import MCSimulation
 
 #### # Streamlit UI
-Creating the side bar to filter asset categories for "NFT" and "Cryptocurrencies"
+Creating the side bar to filter asset categories for "NFT" and "Cryptocurrencies" to give users a drop down to select either "NFT" and "Cryptocurrencies"
 
 Creating the header as "Cryto API Tracker"
 
