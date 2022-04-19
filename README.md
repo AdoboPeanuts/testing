@@ -36,7 +36,7 @@ Setting up the cryptocurrency library for the sample seven cryptocurrencies sele
 
 BTC , ETH , XRP , BNB , SOL , ADA , LUNA 
 
-### Setting up the project user interface on Streamlit. The codes are contained in the file titled Project_1_Final.py
+### Setting up the user interface for the project output on Streamlit. The codes are contained in the file titled Project_1_Final.py
 
 * Importing relevant libraries and dependencies (CustomModule and MCForecastTools).
 
