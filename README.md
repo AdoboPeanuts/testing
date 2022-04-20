@@ -3,7 +3,7 @@ In this project, we create a user-friendly NFT and Cryptocurrency Dashboard, whi
 Our dashboard consists of a User Interface(UI) hosted by Streamlit, comprised of historical and very recent data, complete with relevant line charts, bar charts and other illustrations. 
 
 # Finding Data 
-Using API keys, we source the bulk of our input data from OpenSea for NFTs, and TwelveData for cryptocurrencies. Further, we prepare two input modules, namely CustomModule.py and MCForecastTools.py where, using Python and Pandas,  we create functions and define variables for use in  our main Project_1.py file. 
+Using API keys, we source the bulk of our input data from OpenSea for NFTs, and TwelveData for cryptocurrencies. Further, we prepare two input modules, namely CustomModule.py and MCForecastTools.py where, using Python and Pandas,  we create functions and define variables for use in  our main FinalProject.py file. 
 ## CustomModule.py file
 In this file we import the necessary libraries and dependencies from pandas, streamlit, numpy, TwelveData, OpenSea and the MCForecastTools.py module. 
 We begin by inputting the OpenSea and TwelveData API keys. We subsequently define the Cryptocurrency function ‘create_ts(user_inputc, td)’ that will create a time series from TwelveData using Binance as an exchange over a 5 year date range. We follow up by converting the time series to  a chronological Pandas dataframe by using TwelveData’s  ‘as_pandas()’ function. 
@@ -13,7 +13,7 @@ We complete the Custom Module, by creating functions (similar to the generic Cry
 Using the MCForecastTools.py file from our API module, we import dependencies from TwelveData and CustomModule that relates to our Monte Carlo Simulation. Leaving most of the code unchanged, we substitute the word stocks for ‘cryptocurrencies,’ and run the module. 
 
 # Data Cleanup & Analysis 
-In the Project_1_Final.py module, we import our libraries and dependencies from Pandas, Streamlit, Numpy, OpenSea, CustomModule and MCForecastTools. 
+In the ProjectFinal.py module, we import our libraries and dependencies from Pandas, Streamlit, Numpy, OpenSea, CustomModule and MCForecastTools. 
 
 ## Streamlit UI
 We configure a sidebar for our Streamlit UI that allows the user to sort and filter assets between NFTs and Cryptocurrencies. We also create a header in the main section of the UI called “Crypto API Tracker.”  together with an input box. 
