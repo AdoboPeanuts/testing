@@ -1,6 +1,6 @@
 # Background 
 In this project, we create a user-friendly NFT and Cryptocurrency Dashboard, which allows users to make investment decisions by predicting the performance of the underlying asset classes over time. Our project focuses specifically on the field of trading, as it seeks to inform the user’s future trading activity and decisions.
-Our dashboard consists of a User Interface(UI) hosted by Streamlit, comprised of historical and very recent data, complete with relevant line charts, bar charts and other illustrations. 
+Our dashboard consists of a User Interface(UI) hosted by Streamlit, comprised of historical and very recent data, complete with relevant line charts, bar charts and other illustrations. Please see the file FinalProject.py for our code. 
 
 # Finding Data 
 Using API keys, we source the bulk of our input data from OpenSea for NFTs, and TwelveData for cryptocurrencies. Further, we prepare two input modules, namely CustomModule.py and MCForecastTools.py where, using Python and Pandas,  we create functions and define variables for use in  our main FinalProject.py file. 
