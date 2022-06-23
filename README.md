@@ -39,4 +39,10 @@ We continue our analysis by writing the code for our Sharpe Ratio, where we crea
 ### Cryptocurrency Assets: Monte Carlo Simulations(Project 1)
 In this section, we use the MCForecastTools.py module to prepare forecasts over a 5, 10 and 20 year period, and illustrate our results in the cumulative returns and distribution plots. We highlight that the results of our 20 year simulation cannot be relied upon, given the extremely volatile returns  upper Confidence interval results. We conclude that, over a five-year period a portfolio comprised of Bitcoin(70%) and Ethereum (30%) will likely result in a loss of almost half the investor’s initial capital, or gain a few times the initial investment, thus illustrating the very volatile nature of a cryptocurrency portfolio.
 
-### 
+### Scope & Limitations (Project 2)
+One of the main issues we encountered was that Twitter API has essential access only to Twitter API, which obviously limited the data that we could be
+pulling out and analyzing.
+To not complete things and  mitigate the aforementioned API data, we obtained our Crypto data (on Bitcoin, Ethereum, and Dodgecoin) from a source called Kaggle, which already had pre-pulled twitter API data for each of the respective digital currencies we ranthe SA model on.  
+
+### Analysis (Project 2)
+
