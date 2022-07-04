@@ -7,7 +7,7 @@ import datetime as dt
 from twelvedata import TDClient
 from opensea import OpenseaAPI
 from opensea import utils
-from TweleveDataMCForecast import MCSimulation 
+from MCForecastTools import MCSimulation 
 
 
 #All Functions
